@@ -24,9 +24,11 @@ export const Perfil = styled.div`
     background-color: ${props => props.theme.backgroundHeader};
     width: 90%;
 
+    h4{
+        color: ${props => props.theme.text};
+    }
 
     span{
-        color: ${props => props.theme.text};
         display: block;
         font-style: italic;
         font-weight: 600;
