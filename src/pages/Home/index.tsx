@@ -1,10 +1,10 @@
-import { Txt, BackgroundTeste } from "./styles";
+import { Txt, Container } from "./styles";
 
 export function Home() {
     
     return (
-        <BackgroundTeste>
+        <Container>
             <Txt>Home</Txt>
-        </BackgroundTeste>
+        </Container>
     );
 }

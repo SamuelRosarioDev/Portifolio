@@ -18,7 +18,7 @@ function App() {
     }, [theme]);
 
     return (
-        <ThemeProvider theme={Themes[theme]}>
+        <ThemeProvider  theme={Themes[theme]}>
             <GlobalStyles />
             <Header setTheme={setTheme} />
             <RouterProvider router={routes} />
