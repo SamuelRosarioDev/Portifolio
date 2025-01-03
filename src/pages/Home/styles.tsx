@@ -29,6 +29,7 @@ export const Perfil = styled.div`
     }
 
     span{
+        color: ${props => props.theme.text};
         display: block;
         font-style: italic;
         font-weight: 600;
