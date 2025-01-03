@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerHeader = styled.header`
     background-color: ${props => props.theme.backgroundHeader};
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
