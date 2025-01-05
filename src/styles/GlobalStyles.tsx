@@ -12,7 +12,11 @@ const GlobalStyles = createGlobalStyle`
         height: 100vh;
         display: flex;
         flex-direction: column-reverse;
-        margin-bottom: 6rem;
+        background-color: ${props => props.theme.background};
+    }
+
+    a, h1, h2, h3, h4, h5, h6, li, input, p, span, label, button {
+        color: ${props => props.theme.text};
     }
 `
 

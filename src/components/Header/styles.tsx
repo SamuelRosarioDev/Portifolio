@@ -22,7 +22,6 @@ export const NavBar = styled.nav`
 `
 
 export const Linkers = styled.a`
-    color: ${props => props.theme.text} ;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -36,4 +35,9 @@ export const Linkers = styled.a`
     span{
         font-size: 1rem;
     }
+`
+
+export const HeaderSoul = styled.div`
+    width: 100%;
+    height: 17vh;
 `
