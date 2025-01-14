@@ -5,6 +5,11 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig({
   plugins: [
     react(),
-    svgr() // Certifique-se de que o plugin svgr está aqui
-  ]
+    svgr({
+      svgrOptions: {
+        exportType: 'default'
+      }
+    })
+  ],
+  assetsInclude: ['**/*.svg']
 });
