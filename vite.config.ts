@@ -7,9 +7,12 @@ export default defineConfig({
     react(),
     svgr({
       svgrOptions: {
-        exportType: 'default'
-      }
+        exportType: 'default',
+        ref: true,
+        svgo: true,
+        titleProp: true,
+      },
+      include: '**/*.svg',
     })
-  ],
-  assetsInclude: ['**/*.svg']
+  ]
 });
