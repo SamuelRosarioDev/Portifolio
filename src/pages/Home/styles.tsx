@@ -26,6 +26,10 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     padding: 0 2rem;
+
+    @media (min-width: 841px) {
+        height: 86vh;
+    }
 `;
 
 export const Content = styled.div`

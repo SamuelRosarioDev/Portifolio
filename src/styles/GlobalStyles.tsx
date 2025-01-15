@@ -19,6 +19,12 @@ const GlobalStyles = createGlobalStyle`
         flex-direction: column-reverse;
     }
 
+    @media (min-width: 841px) {
+        #root{
+            flex-direction: column;
+        }
+    }
+
     a, h1, h2, h3, h4, h5, h6, li, input, p, span, label, button {
         color: ${props => props.theme.text};
     }

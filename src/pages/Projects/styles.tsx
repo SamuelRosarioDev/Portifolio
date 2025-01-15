@@ -13,7 +13,8 @@ const fadeIn = keyframes`
 
 export const Container = styled.div`
     padding: 2rem;
-    min-height: 100%;
+    min-height: 86vh;
+    height: 100%;
     background-color: ${props => props.theme.background};
 `;
 

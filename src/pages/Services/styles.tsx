@@ -40,7 +40,7 @@ export const ServiceCard = styled.div`
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
     max-width: calc(33.333% - 1.34rem);
 
     @media (max-width: 1024px) {
