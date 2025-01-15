@@ -14,5 +14,10 @@ export default defineConfig({
       },
       include: '**/*.svg',
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
+  }
 });

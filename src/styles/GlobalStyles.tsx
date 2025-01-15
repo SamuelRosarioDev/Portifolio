@@ -8,11 +8,15 @@ const GlobalStyles = createGlobalStyle`
         font-family: "PT Sans", serif;
     }
 
+    body{
+        min-height: 100vh;
+    }
+
     #root{
-        height: 100vh;
+        height: 100%;
         display: flex;
-        flex-direction: column-reverse;
         background-color: ${props => props.theme.background};
+        flex-direction: column-reverse;
     }
 
     a, h1, h2, h3, h4, h5, h6, li, input, p, span, label, button {

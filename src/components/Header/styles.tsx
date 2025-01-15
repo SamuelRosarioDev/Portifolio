@@ -10,6 +10,8 @@ export const ContainerHeader = styled.header`
     padding-bottom: 0.5rem;
     border-radius: 2rem 2rem 0 0;
     position: fixed;
+    z-index: 1;
+    box-shadow:${props => props.theme.backgroundHeader} 0 0 1rem 0px;
     bottom: 0;
 `
 
