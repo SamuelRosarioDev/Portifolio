@@ -2,18 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background-color: ${props => props.theme.background};
-    height: 80vh;
+    height: 100%;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     @media (min-width: 841px) {
         height: 86vh;
     }
 `;
 
 export const Content = styled.div`
-    max-width: 800px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ export const Content = styled.div`
 export const ContactGrid = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
 `;
 
