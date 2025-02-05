@@ -1,5 +1,14 @@
 import styled, { keyframes } from "styled-components";
 
+const scrollText = keyframes`
+    0% {
+        transform: translateX(80%); /* Começa completamente à direita */
+    }
+    100% {
+        transform: translateX(-90%); /* Termina completamente à esquerda */
+    }
+`;
+
 const fadeIn = keyframes`
     from {
         opacity: 0;
@@ -38,6 +47,9 @@ export const Content = styled.div`
     align-items: center;
     text-align: center;
     animation: ${fadeIn} 1s ease-out;
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 600px; /* Define uma largura máxima para o container */
+    overflow: hidden; /* Controla o overflow aqui */
 `;
 
 export const Name = styled.h1`
@@ -65,9 +77,12 @@ export const Role = styled.h2`
 export const Description = styled.p`
     font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 600px;
     color: ${props => props.theme.text};
-    
+    white-space: nowrap;
+    position: relative; 
+    width: max-content;
+    animation: ${scrollText} 10s linear infinite;
+
     @media (max-width: 768px) {
         font-size: 1rem;
     }
