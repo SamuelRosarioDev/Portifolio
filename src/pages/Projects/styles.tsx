@@ -45,6 +45,12 @@ export const ProjectCard = styled.div`
     aspect-ratio: 4/3;
     max-width: 350px;
     margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais pronunciada */
+    }
 
     @media (max-width: 768px) {
         padding: 1rem;
@@ -90,7 +96,7 @@ export const ProjectImage = styled.div`
         }
         
         img {
-            transform: scale(1.02);
+            transform: scale(1.1); /* Aumenta a escala da imagem */
         }
     }
 `;
@@ -127,14 +133,13 @@ export const TechIcon = styled.img`
 
 export const ProjectLink = styled.a`
     background-color: transparent;
-    color: #fff;
+    color:  ${props => props.theme.text};
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
     z-index: 2;
-    border: 2px solid ${props => props.theme.secondary};
     position: relative;
     overflow: hidden;
     
@@ -166,5 +171,146 @@ export const ProjectLink = styled.a`
     @media (max-width: 768px) {
         padding: 0.5rem 1.2rem;
         font-size: 0.9rem;
+    }
+`;
+
+
+// Dropdown
+
+export const Modal = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: ${fadeIn} 0.3s ease;
+`;
+
+export const ModalContent = styled.div`
+    background: ${props => props.theme.backgroundHeader};
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+    max-height: 800px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        padding: 1rem;
+        width: 95%;
+        height: 95%;
+        max-height: 90vh;
+    }
+`;
+
+export const ModalCard = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+`
+
+export const CloseButton = styled.button`
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: ${props => props.theme.text};
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: color 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: ${props => props.theme.background};
+    background: ${props => props.theme.text};
+
+    }
+`;
+
+export const ModalImage = styled.img`
+    height: 22vw;
+    object-fit: cover;
+    border-radius: 8px;
+
+    @media (max-width: 768px) {
+        height: 40vw;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+`;
+
+export const ModalInfos = styled.div`
+    margin-left: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+        width: 100%;
+    }
+`
+
+export const ModalTitle = styled.h2`
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: ${props => props.theme.text};
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+`;
+
+export const ModalDescription = styled.p`
+    font-size: 1rem;
+    line-height: 1.6;
+    color: ${props => props.theme.text};
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 768px) {
+        font-size: 0.9rem;
+    }
+`;
+
+export const ModalTechStack = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+`;
+
+export const ModalLinks = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+        gap: 0.5rem;
     }
 `;
