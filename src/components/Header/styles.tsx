@@ -77,10 +77,10 @@ export const HeaderSoul = styled.div`
     width: 100%;
 
     @media (min-width: 841px) {
-        height: 14vh;
+        height: 8rem;
     }
 
     @media (max-width: 840px) {
-        height: 17vh;
+        height: 8rem;
     }
 `;
