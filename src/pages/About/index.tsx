@@ -22,13 +22,14 @@ export function About() {
                 </History>
                 <Ability>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
+                        <li>HTML/CSS</li>
                         <li>JavaScript</li>
                         <li>TypeScript</li>
                         <li>React (Vite)</li>
-                        <li>Styled Components</li>
-                        <li>Hooks</li>
+                        <li>React Native</li>
+                        <li>Git/Github</li>
+                        <li>SQL</li>
+                        <li>React Hooks</li>
                         <li>Node.js</li>
                         <li>Bun</li>
                         <li>Java</li>
@@ -43,6 +44,7 @@ export function About() {
                         <li>Bots</li>
                         <li>MVC</li>
                         <li>MVP</li>
+                        <li>Inglês</li>
                     </ul>
 
                 </Ability>

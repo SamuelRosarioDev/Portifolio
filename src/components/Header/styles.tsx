@@ -61,9 +61,11 @@ export const Linkers = styled.a`
     }
 
     &:hover {
-        color: ${props => props.theme.primary};
-        transform: translateY(-2px);
+        svg, span {
+            color: ${props => props.theme.primary};
+        }
     }
+
 
     @media (max-width: 840px) {
         flex-direction: column;
@@ -77,10 +79,10 @@ export const HeaderSoul = styled.div`
     width: 100%;
 
     @media (min-width: 841px) {
-        height: 8rem;
+        height: 6rem;
     }
 
     @media (max-width: 840px) {
-        height: 8rem;
+        height: 6rem;
     }
 `;
