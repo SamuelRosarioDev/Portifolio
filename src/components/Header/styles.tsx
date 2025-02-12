@@ -80,14 +80,9 @@ export const Linkers = styled.a`
 
 export const HeaderSoul = styled.div`
     width: 100%;
+    height: 14vh;
 
-    @media (min-width: 841px) {
-        height: 6rem;
-    }
 
-    @media (max-width: 840px) {
-        height: 6rem;
-    }
 `;
 
 export const TranslationAndTheme = styled.div`

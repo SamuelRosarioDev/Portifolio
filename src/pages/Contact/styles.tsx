@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background-color: ${props => props.theme.background};
-    min-height: 83.4vh;
+    height: 100%;
+    min-height: 86vh;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     padding: 1rem;
     @media (min-width: 880px) {
     }
