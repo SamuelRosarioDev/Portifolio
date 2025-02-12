@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 
 type Language = 'Portuguese' | 'English';
@@ -17,6 +17,10 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
         return stored === 'Portuguese' || stored === 'English' ? stored as Language : 'Portuguese';
     });
 
+    useEffect(() => {
+        localStorage.setItem('language', language);
+    }, [language]);
+
     const translation = useTranslation(language);
 
     if (!translation || translation.error) {
@@ -29,7 +33,6 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
         </LanguageContext.Provider>
     );
 };
-
 
 export const useLanguage = () => {
     const context = useContext(LanguageContext);

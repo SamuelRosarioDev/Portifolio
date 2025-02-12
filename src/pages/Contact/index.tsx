@@ -42,6 +42,7 @@ export function Contact() {
         };
 
         if (serviceId && templateId && publicKey) {
+            alert("Enviando mensagem...");
             emailjs.send(serviceId, templateId, templateParams, publicKey)
                 .then(() => {
                     alert("Mensagem enviada com sucesso!");
@@ -130,8 +131,8 @@ export function Contact() {
                         <Input type="email" name="email" placeholder={translation?.contact?.emailPlaceholder} value={formData.email} onChange={handleChange} required />
                     </BoxInput>
                     <BoxInput>
-                        <Input type="text" name="phone" placeholder={translation?.contact?.phonePlaceholder} value={formData.phone} onChange={handleChange} required/>
-                        <Input type="text" name="subject" placeholder={translation?.contact?.subjectPlaceholder} value={formData.subject} onChange={handleChange} required/>
+                        <Input type="text" name="phone" placeholder={translation?.contact?.phonePlaceholder} value={formData.phone} onChange={handleChange} required />
+                        <Input type="text" name="subject" placeholder={translation?.contact?.subjectPlaceholder} value={formData.subject} onChange={handleChange} required />
                     </BoxInput>
                     <TextArea name="message" placeholder={translation?.contact?.messagePlaceholder} value={formData.message} onChange={handleChange} required />
                     <Button type="submit">{translation?.contact?.submitButton}</Button>
