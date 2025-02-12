@@ -1,0 +1,19 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "curriculum": "Curriculum",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Prefer to send me a direct email? I'm ready to hear from you!",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "phonePlaceholder": "Your Phone",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Your Message",
+    "submitButton": "Send Message"
+  }
+}

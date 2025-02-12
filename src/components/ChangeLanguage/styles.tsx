@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonTheme = styled.button`
+export const ButtonLanguage = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;

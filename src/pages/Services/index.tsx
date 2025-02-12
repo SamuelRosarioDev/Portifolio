@@ -96,7 +96,7 @@ export function Services() {
                             {service.icon}
                             <ServiceTitle>{service.title}</ServiceTitle>
                         </ServiceIcon>
-                        
+
                         <ServiceDescription>{service.description}</ServiceDescription>
                         <ServicesList>
                             {service.features.map((feature, featureIndex) => (

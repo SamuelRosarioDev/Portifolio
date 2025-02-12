@@ -54,13 +54,16 @@ export const Linkers = styled.a`
     svg {
         width: 1.5rem;
         height: 1.5rem;
+
     }
 
     span {
         font-size: 1rem;
     }
 
+
     &:hover {
+
         svg, span {
             color: ${props => props.theme.primary};
         }
@@ -86,3 +89,8 @@ export const HeaderSoul = styled.div`
         height: 6rem;
     }
 `;
+
+export const TranslationAndTheme = styled.div`
+    display: flex;
+    gap: 1rem;
+`

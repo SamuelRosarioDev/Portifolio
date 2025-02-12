@@ -2,28 +2,32 @@ import { RouterProvider } from 'react-router-dom';
 import routes from './routes/router';
 import GlobalStyles from './styles/GlobalStyles';
 import { Themes } from './styles/Themes';
+import { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Header } from './components/Header';
-import { useEffect, useState } from 'react';
+import { LanguageProvider } from './context/LanguageContext';
 
-// Pego meu theme do localstorage para implementar ao tipo do meu useState
-const getTheme = (localStorage.getItem('theme') as 'Light' | 'Dark') || 'Dark';
+const getStoredValue = <T extends string>(key: string, defaultValue: T): T => {
+    const stored = localStorage.getItem(key);
+    return stored === 'Light' || stored === 'Dark' ? (stored as T) : defaultValue;
+};
 
 function App() {
-    // Estou definindo que meu theme vai receber light dark e os dados do getheme
-    const [theme, setTheme] = useState<'Light' | 'Dark'>(getTheme);
-    //esculta todas as alterações meu theme e aplica no localstorage sempre que mudar
+    const [theme, setTheme] = useState<'Light' | 'Dark'>(() => getStoredValue('theme', 'Dark'));
+
     useEffect(() => {
         localStorage.setItem('theme', theme);
     }, [theme]);
 
     return (
-        <ThemeProvider  theme={Themes[theme]}>
-            <GlobalStyles />
-            <Header setTheme={setTheme} />
-            <RouterProvider router={routes} />
-        </ThemeProvider>
+        <LanguageProvider>
+            <ThemeProvider theme={Themes[theme]}>
+                <GlobalStyles />
+                <Header setTheme={setTheme} />
+                <RouterProvider router={routes} />
+            </ThemeProvider>
+        </LanguageProvider>
     );
 }
 
-export default App
+export default App;

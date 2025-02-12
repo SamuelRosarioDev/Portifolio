@@ -1,0 +1,19 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "services": "Serviços",
+    "curriculum": "Curriculo",
+    "contact": "Contato"
+  },
+  "contact": {
+    "title": "Prefere me enviar um e-mail direto? Estou pronto para te ouvir!",
+    "namePlaceholder": "Seu Nome",
+    "emailPlaceholder": "Seu Email",
+    "phonePlaceholder": "Seu Telefone",
+    "subjectPlaceholder": "Assunto",
+    "messagePlaceholder": "Sua Mensagem",
+    "submitButton": "Enviar Mensagem"
+  }
+}
