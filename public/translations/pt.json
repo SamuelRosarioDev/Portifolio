@@ -1,16 +1,84 @@
 {
   "header": {
-    "home": "Inicio",
+    "home": "Início",
     "about": "Sobre",
     "projects": "Projetos",
     "services": "Serviços",
-    "curriculum": "Curriculo",
+    "curriculum": "Currículo",
     "contact": "Contato"
   },
-
+  "services": {
+    "development": {
+      "title": "Desenvolvimento de Sites",
+      "description": "Criação de sites profissionais, responsivos e otimizados para todos os dispositivos.",
+      "features": [
+        "Responsivos",
+        "Sites institucionais",
+        "Landing pages",
+        "Blogs",
+        "Portfólios",
+        "E-commerces"
+      ]
+    },
+    "maintenance": {
+      "title": "Manutenção de Sites",
+      "description": "Serviços de manutenção e atualização para manter seu site sempre funcionando perfeitamente.",
+      "features": [
+        "Atualizações de conteúdo",
+        "Correção de bugs",
+        "Melhorias de performance",
+        "Backup regular",
+        "Suporte técnico"
+      ]
+    },
+    "automation": {
+      "title": "Automação de Processos",
+      "description": "Desenvolvimento de softwares para automatizar e otimizar processos do seu negócio.",
+      "features": [
+        "Automação de tarefas",
+        "Integração de sistemas",
+        "Workflows personalizados",
+        "Redução de trabalho manual",
+        "Aumento de produtividade"
+      ]
+    },
+    "inventory": {
+      "title": "Gestão de Estoque",
+      "description": "Sistemas completos para controle e gestão de estoque do seu negócio.",
+      "features": [
+        "Controle de entrada/saída",
+        "Gestão de fornecedores",
+        "Relatórios detalhados",
+        "Alertas de estoque baixo",
+        "Controle de validade"
+      ]
+    },
+    "mobileApps": {
+      "title": "Aplicativos Mobile",
+      "description": "Desenvolvimento de aplicativos mobile nativos e híbridos para iOS e Android.",
+      "features": [
+        "Apps personalizados",
+        "Interface intuitiva",
+        "Integração com APIs",
+        "Performance otimizada",
+        "Suporte contínuo"
+      ]
+    },
+    "database": {
+      "title": "Banco de Dados",
+      "description": "Desenvolvimento e manutenção de bancos de dados para seu negócio.",
+      "features": [
+        "Modelagem de dados",
+        "Otimização de queries",
+        "Backup e recuperação",
+        "Migração de dados",
+        "Segurança de dados"
+      ]
+    }
+  },
   "curriculum": {
-    "title": "Baixe meu curriculo completo em PDF",
-    "download": "Baixar Curriculo"
+    "title": "Baixe meu currículo completo em PDF",
+    "download": "Baixar Currículo"
   },
   "contact": {
     "title": "Prefere me enviar um e-mail direto? Estou pronto para te ouvir!",

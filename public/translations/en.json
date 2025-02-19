@@ -4,15 +4,84 @@
     "about": "About",
     "projects": "Projects",
     "services": "Services",
-    "curriculum": "Curriculum",
+    "curriculum": "Resume",
     "contact": "Contact"
+  },
+  "services": {
+    "development": {
+      "title": "Website Development",
+      "description": "Creation of professional, responsive, and optimized websites for all devices.",
+      "features": [
+        "Responsive",
+        "Institutional websites",
+        "Landing pages",
+        "Blogs",
+        "Portfolios",
+        "E-commerce"
+      ]
+    },
+    "maintenance": {
+      "title": "Website Maintenance",
+      "description": "Maintenance and update services to keep your website running perfectly.",
+      "features": [
+        "Content updates",
+        "Bug fixes",
+        "Performance improvements",
+        "Regular backups",
+        "Technical support"
+      ]
+    },
+    "automation": {
+      "title": "Process Automation",
+      "description": "Development of software to automate and optimize business processes.",
+      "features": [
+        "Task automation",
+        "System integration",
+        "Custom workflows",
+        "Reduction of manual work",
+        "Increased productivity"
+      ]
+    },
+    "inventory": {
+      "title": "Inventory Management",
+      "description": "Complete systems for inventory control and management.",
+      "features": [
+        "Inbound/outbound control",
+        "Supplier management",
+        "Detailed reports",
+        "Low stock alerts",
+        "Expiration control"
+      ]
+    },
+    "mobileApps": {
+      "title": "Mobile Applications",
+      "description": "Development of native and hybrid mobile apps for iOS and Android.",
+      "features": [
+        "Custom apps",
+        "Intuitive interface",
+        "API integration",
+        "Optimized performance",
+        "Continuous support"
+      ]
+    },
+    "database": {
+      "title": "Database",
+      "description": "Development and maintenance of databases for your business.",
+      "features": [
+        "Data modeling",
+        "Query optimization",
+        "Backup and recovery",
+        "Data migration",
+        "Data security"
+      ]
+    }
   },
   "curriculum": {
     "title": "Download my full resume in PDF",
-    "download": "Download Curriculum"
+    "download": "Download Resume"
   },
   "contact": {
-    "title": "Prefer to send me a direct email? I'm ready to hear from you!",
+    "title": "Prefer to send me an email directly? I'm ready to hear from you!",
     "namePlaceholder": "Your Name",
     "emailPlaceholder": "Your Email",
     "phonePlaceholder": "Your Phone",

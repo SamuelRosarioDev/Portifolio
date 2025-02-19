@@ -56,10 +56,7 @@ export const ServiceIcon = styled.div`
     color: ${props => props.theme.text};
     display: flex;
     align-items: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: .5rem;
     margin-bottom: 1rem;
 `;
