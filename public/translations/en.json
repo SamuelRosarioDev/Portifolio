@@ -7,6 +7,10 @@
     "curriculum": "Curriculum",
     "contact": "Contact"
   },
+  "curriculum": {
+    "title": "Download my full resume in PDF",
+    "download": "Download Curriculum"
+  },
   "contact": {
     "title": "Prefer to send me a direct email? I'm ready to hear from you!",
     "namePlaceholder": "Your Name",

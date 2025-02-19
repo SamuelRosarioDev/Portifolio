@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export const useTranslation = (language: "Portuguese" | "English") => {
-  const [translations, setTranslations] = useState<any>(null);
+  const [translations, setTranslations] = useState<any>();
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -25,5 +25,5 @@ export const useTranslation = (language: "Portuguese" | "English") => {
     loadTranslations();
   }, [language]);
 
-  return translations || { error };
+  return error ? { error } : translations;
 };

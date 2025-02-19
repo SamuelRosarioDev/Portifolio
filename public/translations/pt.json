@@ -7,6 +7,11 @@
     "curriculum": "Curriculo",
     "contact": "Contato"
   },
+
+  "curriculum": {
+    "title": "Baixe meu curriculo completo em PDF",
+    "download": "Baixar Curriculo"
+  },
   "contact": {
     "title": "Prefere me enviar um e-mail direto? Estou pronto para te ouvir!",
     "namePlaceholder": "Seu Nome",
