@@ -4,8 +4,18 @@
     "about": "About",
     "projects": "Projects",
     "services": "Services",
-    "curriculum": "Resume",
+    "curriculum": "curriculum",
     "contact": "Contact"
+  },
+  "projects": {
+    "linktree": {
+      "title": "Linktree Samuel",
+      "description": "My personal linketree, with links to my social networks and projects."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "My portfolio with information about me and my projects."
+    }
   },
   "services": {
     "development": {
@@ -77,8 +87,8 @@
     }
   },
   "curriculum": {
-    "title": "Download my full resume in PDF",
-    "download": "Download Resume"
+    "title": "Download my full curriculum in PDF",
+    "download": "Download curriculum"
   },
   "contact": {
     "title": "Prefer to send me an email directly? I'm ready to hear from you!",

@@ -7,6 +7,16 @@
     "curriculum": "Currículo",
     "contact": "Contato"
   },
+  "projects": {
+    "linktree": {
+      "title": "Linktree Samuel",
+      "description": "Meu linketree pessoal, com links para minhas redes sociais e projetos."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Meu portfólio com informações sobre mim e meus projetos."
+    }
+  },
   "services": {
     "development": {
       "title": "Desenvolvimento de Sites",
