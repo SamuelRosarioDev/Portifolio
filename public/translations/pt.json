@@ -7,6 +7,10 @@
     "curriculum": "Currículo",
     "contact": "Contato"
   },
+  "home": {
+    "role": "Desenvolvedor Full Stack",
+    "description": "Transformando ideias em <Highlight>código</Highlight>, criando soluções <Highlight>inovadoras</Highlight> e construindo experiências <Highlight>digitais</Highlight> únicas."
+  },
   "projects": {
     "linktree": {
       "title": "Linktree Samuel",
@@ -16,6 +20,9 @@
       "title": "Portfolio",
       "description": "Meu portfólio com informações sobre mim e meus projetos."
     }
+  },
+  "about":{
+
   },
   "services": {
     "development": {

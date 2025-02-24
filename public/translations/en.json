@@ -7,6 +7,10 @@
     "curriculum": "curriculum",
     "contact": "Contact"
   },
+  "home": {
+    "role": "Full Stack Developer",
+    "description": "Turning ideas into <Highlight>code</Highlight>, creating <Highlight>innovative</Highlight> solutions and building unique <Highlight>digital</Highlight> experiences."
+  },
   "projects": {
     "linktree": {
       "title": "Linktree Samuel",
@@ -18,7 +22,7 @@
     }
   },
   "services": {
-    "development": {
+    "development": { 
       "title": "Website Development",
       "description": "Creation of professional, responsive, and optimized websites for all devices.",
       "features": [
